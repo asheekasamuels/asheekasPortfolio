@@ -129,6 +129,11 @@ main {
     margin-right: 20px;
     scroll-snap-align: start;
     border: 1px solid #ccc;
+    transition: all .5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
   }
   
   .card img {
