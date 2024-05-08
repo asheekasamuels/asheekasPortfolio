@@ -663,3 +663,42 @@ input {
   }
 }
   
+  .skill-imgs {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .skill-imgs2 {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .logos {
+    /* aspect-ratio: 5/4; */
+    height: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .blocks {
+    background-color: #F080B7;
+    padding: 20px;
+    border: 2px solid white;
+    width: 250px;
+    box-shadow: white;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+  }
+  
+  .blocks:hover {
+    transform: scale(1.08);
+    transition: all 0.5s;
+    box-shadow: 0 0 8px 3px white;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  
