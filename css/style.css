@@ -73,6 +73,73 @@ img[alt='Asheeka1'] {
 }
 
 
+.about {
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    color: black;
+   
+  }
+  
+  .infoBlocks {
+    border: 2px solid black;
+    max-width: 1700px;
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #F080B7;
+  }
+  .personal {
+    text-align: left;
+  }
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .leftSide {
+    width: 68%;
+    border-right: 2px solid black;
+  }
+  
+  ul {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  
+  li {
+    margin-top: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    margin: 20px;
+  }
+  
+  .pic {
+    border-radius: 150px;
+    width: 250px;
+    margin: auto;
+  }
+  
+  p {
+    line-height: 25px;
+  }
+  
+  .picture {
+    margin: 20px;
+  }
+
 img[alt='logo1'] {
     width: 5rem;
     aspect-ratio: 1/1;
@@ -102,7 +169,7 @@ footer {
 }
 
 main {
-    background-color: #E94196;
+    background-color: #F9D9E6;
 }
 
 .col {
@@ -128,11 +195,12 @@ main {
     width: 300px;
     margin-right: 20px;
     scroll-snap-align: start;
-    border: 1px solid #ccc;
+    border: 2px solid black;
     transition: all .5s;
 
     &:hover {
         transform: scale(1.1);
+        box-shadow: 0 0 30px 5px #F080B7;
     }
   }
   
@@ -202,7 +270,7 @@ main {
     position: absolute;
     content: " ";
     width: 3px;
-    background-color: #F9D9E6;
+    background-color: #F080B7;
     left: 50%;
     margin-left: -1.5px;
   }
@@ -235,12 +303,12 @@ main {
   .timeline>li>.timeline-panel {
     width: 46%;
     float: left;
-    border: 1px solid #F9D9E6;
+    border: 1px solid #F080B7;
     border-radius: 2px;
     padding: 20px;
     position: relative;
-    -webkit-box-shadow: 0 6px 9px whitesmoke ;
-    box-shadow: 0 6px 9px whitesmoke;
+    -webkit-box-shadow: 0 6px 9px black ;
+    box-shadow: 0 6px 9px black;
     background-color: #F080B7;
   }
   
@@ -250,8 +318,8 @@ main {
     right: -15px;
     display: inline-block;
     border-top: 15px solid transparent;
-    border-left: 15px solid #F9D9E6;
-    border-right: 0 solid #F9D9E6;
+    border-left: 15px solid #F080B7;
+    border-right: 0 solid #F080B7;
     border-bottom: 15px solid transparent;
     content: " ";
   }
@@ -262,14 +330,14 @@ main {
     right: -14px;
     display: inline-block;
     border-top: 14px solid transparent;
-    border-left: 14px solid #F9D9E6;
-    border-right: 0 solid #F9D9E6;
+    border-left: 14px solid #F080B7;
+    border-right: 0 solid #F080B7;
     border-bottom: 14px solid transparent;
     content: " ";
   }
   
   .timeline>li>.timeline-badge {
-    color: #F9D9E6;
+    color: #F080B7;
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -279,7 +347,7 @@ main {
     top: 16px;
     left: 50%;
     margin-left: -25px;
-    background-color: #F9D9E6;
+    background-color: black;
     z-index: 100;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
@@ -340,4 +408,258 @@ main {
   .timeline-body>p+p {
     margin-top: 5px;
   }
+
+  .accordion {
+    width: 75%;
+    margin: auto;
+    --bs-accordion-bg: #F080B7 ;
+    --bs-accordion-btn-icon: url(https://i.postimg.cc/hvn8tSJ8/icons8-minecraft-sword-48.png);
+    --bs-accordion-btn-active-icon: url(https://i.postimg.cc/Y0PvSWxm/icons8-minecraft-axe-48.png);
+}
+
+button.accordion-button.collapsed {
+    color: black;
+    background: white;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 #ffffff;
+}
+
+.accordion-header {
+    color: black;
+}
+
+.accordion-body {
+    background: white;
+    color: black;
+    padding: 50px;
+}
+
+.project-imgs {
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.pro-link {
+    padding: 15px;
+    width: 350px;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    box-shadow: #F080B7;
+    -webkit-transition: all 0.1s ease-in;
+    -moz-transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in;
+}
+.pro-link:hover {
+    box-shadow: 0 0 30px 5px #F080B7;
+    -webkit-transition: all 0.1s ease-out;
+    -moz-transition: all 0.1s ease-out;
+    transition: all 0.1s ease-out;
+}
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.swipe {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 1340px) {
+    .skill-imgs, .skill-imgs2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .blocks {
+      margin: 20px;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+     .images {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width: 590px) {
+   
+    .education.container-fluid {
+      width: 89%;
+  }
+  }
+  @media only screen and (max-width: 480px) {
+    .start, .cv-button {
+      width: 90%;
+    }
+    
+  }
+  @media only screen and (max-width: 450px) {
+    .timeline-panel {
+      padding: 10px;
+  }
+  .timeline-panel p {
+    font-size: 12px;
+  }
+  h4.timeline-title {
+      font-size: 16px;
+  }
+  }
+  @media only screen and (max-width: 380px) {
+    .timeline-panel p {
+    font-size: 9px;
+  }
+  h4.timeline-title {
+      font-size: 12px;
+  }
+  }
+  @media only screen and (max-width: 350px) {
+    .card {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 570px) {
+    .pro-link {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .start {
+      width: 90%;
+    }
+    .reviews {
+      min-width: 300px;
+    }
+  }
+
+  @media only screen and (max-width: 1700px){
+  .infoBlocks {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 960px){
+  .infoBlocks {
+    width: 100%;
+    flex-direction: column;
+    border: none;
+  }
+  .leftSide {
+    border: none;
+    margin: auto;
+  }
+  .personal, ul {
+    text-align: center !important;
+    text-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .start {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .mail {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 440px) {
+  .mail {
+    font-size: 10px;
+  }
+  .rightSide {
+    margin: 0px !important;
+    width: 100%;
+}
+.leftSide {
+  width: 100% !important;
+}
+}
+@media only screen and (max-width: 372px) {
+  .mail {
+    font-size: 9px;
+  }
+  .personal {
+    font-size: 20px;
+    text-wrap: wrap;
+    margin: 0px;
+  }
+  .specialities {
+    width: 100%;
+    /* margin: 0px !important; */
+    /* padding: 0px !important; */
+}
+h2 {
+  margin: 10px;
+}
+}
+
+h1 {
+    color: black;
+    margin-bottom: 70px;
+    margin-top: 20px;
+}
+.contact {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.form {
+    width: 50%;
+    height: 80vh;
+    margin: auto;
+}
+::placeholder{
+    color: black;
+}
+input, textarea {
+    background:#F080B7;
+    border-radius: 0px;
+    padding: 20px;
+    color: black;
+}
+input:hover, textarea:hover {
+    background: #F9D9E6;
+    color: white;
+}
+.inputbox {
+    width: 100%;
+    margin: auto;
+}
+.formbuttons {
+    width: 100%;
+    color: white;
+    background: #F080B7;
+    border: 1px solid #F9D9E6;
+    padding: 15px;
+    height: 80px;
+}
+.formbuttons:hover {
+    background: #F080B7;
+    color: black;
+}
+input {
+    height: 80px;
+}
+@media only screen and (max-width: 425px) {
+  ::placeholder {
+    font-size: 13px;
+  }
+}
   
