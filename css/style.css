@@ -118,6 +118,62 @@ img[alt='Asheeka1'] {
   .picture {
     margin: 20px;
   }
+  
+   @media only screen and (max-width: 1700px){
+    .infoBlocks {
+      width: 90%;
+    }
+  }
+  @media only screen and (max-width: 960px){
+    .infoBlocks {
+      width: 100%;
+      flex-direction: column;
+      border: none;
+    }
+    .leftSide {
+      border: none;
+      margin: auto;
+    }
+    .personal, ul {
+      text-align: center !important;
+      text-wrap: wrap;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    .mail {
+      font-size: 12px;
+    }
+  }
+  @media only screen and (max-width: 440px) {
+    .mail {
+      font-size: 12px;
+    }
+    .rightSide {
+      margin: 0px !important;
+      width: 100%;
+  }
+  .leftSide {
+    width: 100% !important;
+  }
+  }
+  @media only screen and (max-width: 372px) {
+    .mail {
+      font-size: 9px;
+    }
+    .personal {
+      font-size: 20px;
+      text-wrap: wrap;
+      margin: 0px;
+    }
+    .specialities {
+      width: 100%;
+      /* margin: 0px !important; */
+      /* padding: 0px !important; */
+  }
+  h2 {
+    margin: 10px;
+  }
+  }
 
 /* Navbar logo */
 img[alt='logo1'] {
@@ -600,86 +656,6 @@ button.accordion-button.collapsed {
     }
   }
 
-/* skills */
-@media only screen and (max-width: 1340px) {
-    .skill-imgs, .skill-imgs2 {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .blocks {
-      margin: 20px;
-    }
-  }
-  @media only screen and (max-width: 750px) {
-     .images {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    } 
-    .card {
-      margin-bottom: 20px;
-    }
-  }
-
- /* about */
-  @media only screen and (max-width: 1700px){
-  .infoBlocks {
-    width: 90%;
-  }
-}
-@media only screen and (max-width: 960px){
-  .infoBlocks {
-    width: 100%;
-    flex-direction: column;
-    border: none;
-  }
-  .leftSide {
-    border: none;
-    margin: auto;
-  }
-  .personal, ul {
-    text-align: center !important;
-    text-wrap: wrap;
-  }
-}
-@media only screen and (max-width: 570px) {
-  .mail {
-    font-size: 12px;
-  }
-}
-@media only screen and (max-width: 440px) {
-  .mail {
-    font-size: 12px;
-  }
-  .rightSide {
-    margin: 0px !important;
-    width: 100%;
-}
-.leftSide {
-  width: 100% !important;
-}
-}
-@media only screen and (max-width: 372px) {
-  .mail {
-    font-size: 9px;
-  }
-  .personal {
-    font-size: 20px;
-    text-wrap: wrap;
-    margin: 0px;
-  }
-  .specialities {
-    width: 100%;
-    /* margin: 0px !important; */
-    /* padding: 0px !important; */
-}
-h2 {
-  margin: 10px;
-}
-}
-
 /* reach me */
 h1 {
     color: black;
@@ -776,4 +752,25 @@ input {
     transition: all 0.2s ease-out;
   }
 
+  @media only screen and (max-width: 1340px) {
+    .skill-imgs, .skill-imgs2 {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .blocks {
+      margin: 20px;
+    }
+  }
+  @media only screen and (max-width: 750px) {
+     .images {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    } 
+    .card {
+      margin-bottom: 20px;
+    }
+  }
   
