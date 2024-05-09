@@ -22,30 +22,6 @@
     --bgImg: linear-gradient(to right, var (--awesome), var (--mainBg))
 }
 
-@property --top-left {
-    syntax: "<percentange>";
-    inherits: false;
-    initial-value: 50%;
-} 
-
-@property --top-right {
-    syntax: "<percentange>";
-    inherits: false;
-    initial-value: 50%;
-}
-
-@property --bottom-left {
-    syntax: "<percentange>";
-    inherits: false;
-    initial-value: 0%;
-} 
-
-@property --bottom-right {
-    syntax: "<percentange>";
-    inherits: false;
-    initial-value: 0%;
-}
-
 /* Navbar & Footer*/
 :is(.navbar, footer){
     background-color: var(--bgHeaderFooter);
@@ -64,6 +40,7 @@ a{
         text-decoration: underline;
     }
 }
+/* home page logo */
 img[alt='Asheeka1'] {
     width: 30rem;
     aspect-ratio: 1/1;
@@ -72,7 +49,7 @@ img[alt='Asheeka1'] {
     box-shadow: 0 4px 8px 0 #F9D9E6;
 }
 
-
+/* About */
 .about {
     background-position: center;
     background-attachment: fixed;
@@ -140,6 +117,7 @@ img[alt='Asheeka1'] {
     margin: 20px;
   }
 
+/* Navbar logo */
 img[alt='logo1'] {
     width: 5rem;
     aspect-ratio: 1/1;
@@ -160,6 +138,7 @@ img[alt='logo1'] {
 
 }
 
+/* footer */
 footer {
     background-color: #F080B7;
     padding: 20px 0;
@@ -168,10 +147,116 @@ footer {
     width: 100%;
 }
 
+.card1 {
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: 3px solid #F9D9E6;
+    background: transparent;
+    border-radius: 90px 5px 5px 5px;
+    transition: .2s ease-in-out;
+}
+
+.instagram {
+    margin-top: 0.8em;
+    margin-left: 0.6em;
+    fill: white;
+}
+
+.card2 {
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: 3px solid #F9D9E6;
+    background: transparent;
+    border-radius: 5px 90px 5px 5px;
+    transition: .2s ease-in-out;
+}
+
+.facebook {
+    margin-top: 0.8em;
+    margin-left: -.5em;
+    fill: white;
+}
+
+.card3 {
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: 3px solid #F9D9E6;
+    background: transparent;
+    border-radius: 5px 5px 5px 90px;
+    transition: .2s ease-in-out;
+}
+
+.github {
+    margin-top: -.4em;
+    margin-left: 0.8em;
+    fill: white;
+}
+
+.card4 {
+    width: 60px;
+    height: 60px;
+    outline: none;
+    border: 3px solid #F9D9E6;
+    background: transparent;
+    border-radius: 5px 5px 90px 5px;
+    transition: .2s ease-in-out;
+}
+
+.linkedin {
+    margin-top: -.6em;
+    margin-left: -0.6em;
+    fill: white;
+}
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+
+}
+
+.card1:hover .instagram {
+    fill: white;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+
+}
+
+.card2:hover .twitter {
+    fill: white;
+}
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+
+}
+
+.card3:hover .github {
+    fill: white;
+}
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+
+}
+
+.card4:hover .discord {
+    fill: white;
+}
+
+/* main bg color */
 main {
     background-color: #F9D9E6;
 }
 
+/* testimonial cards */
 .col {
     width: 100%;
     height: 100vh;
@@ -257,6 +342,8 @@ main {
     text-align: center;
   }
 
+
+  /* education & expierence */
   .timeline {
     list-style: none;
     padding: 20px 0 20px;
@@ -341,7 +428,7 @@ main {
     width: 50px;
     height: 50px;
     line-height: 50px;
-    font-size: 1.4em;
+    font-size: 1.1em;
     text-align: center;
     position: absolute;
     top: 16px;
@@ -409,6 +496,46 @@ main {
     margin-top: 5px;
   }
 
+  @media only screen and (max-width: 590px) {
+   
+    .education.container-fluid {
+      width: 89%;
+  }
+  }
+  @media only screen and (max-width: 450px) {
+    .timeline-panel {
+      padding: 10px;
+  }
+  .timeline-panel p {
+    font-size: 12px;
+  }
+  h4.timeline-title {
+      font-size: 16px;
+  }
+  }
+  @media only screen and (max-width: 380px) {
+    .timeline-panel p {
+    font-size: 9px;
+  }
+  h4.timeline-title {
+      font-size: 12px;
+  }
+  }
+  @media only screen and (max-width: 350px) {
+    .card {
+      width: 90%;
+    }
+  }
+
+  /* projects */
+  .projects {
+    color: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    
+}
   .accordion {
     width: 75%;
     margin: auto;
@@ -474,6 +601,19 @@ button.accordion-button.collapsed {
     font-size: 12px;
 }
 
+@media only screen and (max-width: 570px) {
+    .pro-link {
+      width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 570px) {
+    .pro-link {
+      width: 90%;
+    }
+  }
+
+/* skills */
 @media only screen and (max-width: 1340px) {
     .skill-imgs, .skill-imgs2 {
       display: flex;
@@ -495,57 +635,8 @@ button.accordion-button.collapsed {
       margin-bottom: 20px;
     }
   }
-  @media only screen and (max-width: 590px) {
-   
-    .education.container-fluid {
-      width: 89%;
-  }
-  }
-  @media only screen and (max-width: 480px) {
-    .start, .cv-button {
-      width: 90%;
-    }
-    
-  }
-  @media only screen and (max-width: 450px) {
-    .timeline-panel {
-      padding: 10px;
-  }
-  .timeline-panel p {
-    font-size: 12px;
-  }
-  h4.timeline-title {
-      font-size: 16px;
-  }
-  }
-  @media only screen and (max-width: 380px) {
-    .timeline-panel p {
-    font-size: 9px;
-  }
-  h4.timeline-title {
-      font-size: 12px;
-  }
-  }
-  @media only screen and (max-width: 350px) {
-    .card {
-      width: 90%;
-    }
-  }
 
-  @media only screen and (max-width: 570px) {
-    .pro-link {
-      width: 90%;
-    }
-  }
-  @media only screen and (max-width: 480px) {
-    .start {
-      width: 90%;
-    }
-    .reviews {
-      min-width: 300px;
-    }
-  }
-
+ /* about */
   @media only screen and (max-width: 1700px){
   .infoBlocks {
     width: 90%;
@@ -566,11 +657,6 @@ button.accordion-button.collapsed {
     text-wrap: wrap;
   }
 }
-@media only screen and (max-width: 480px) {
-  .start {
-    width: 90%;
-  }
-}
 @media only screen and (max-width: 570px) {
   .mail {
     font-size: 12px;
@@ -578,7 +664,7 @@ button.accordion-button.collapsed {
 }
 @media only screen and (max-width: 440px) {
   .mail {
-    font-size: 10px;
+    font-size: 12px;
   }
   .rightSide {
     margin: 0px !important;
@@ -607,6 +693,7 @@ h2 {
 }
 }
 
+/* reach me */
 h1 {
     color: black;
     margin-bottom: 70px;
@@ -663,6 +750,7 @@ input {
   }
 }
   
+/* skills */
   .skill-imgs {
     display: flex;
     justify-content: space-between;
