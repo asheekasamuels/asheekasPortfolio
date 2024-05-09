@@ -28,7 +28,8 @@
 }
 /* Navbar */
 :is(.nav-link) {
-    color: var(--secondary)!important;
+    color: black !important;
+    text-align: center;
 }
 
 /* Navbar */
@@ -143,7 +144,7 @@ footer {
     background-color: #F080B7;
     padding: 20px 0;
     text-align: center;
-    color: black;
+    color: black !important;
     width: 100%;
 }
 
@@ -305,22 +306,9 @@ main {
   .card-content p {
     margin: 0;
   }
-
-  .slider {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-    padding: 20px;
-    overflow: hidden; /* Hide the scroll bar */
-  }
-  
-
   .centered-text {
     animation: slideCenter 1s ease-in-out forwards;
     text-align: center;
-    font-family: marck script;
   }
   
   @keyframes slideCenter {
@@ -540,8 +528,6 @@ main {
     width: 75%;
     margin: auto;
     --bs-accordion-bg: #F080B7 ;
-    --bs-accordion-btn-icon: url(https://i.postimg.cc/hvn8tSJ8/icons8-minecraft-sword-48.png);
-    --bs-accordion-btn-active-icon: url(https://i.postimg.cc/Y0PvSWxm/icons8-minecraft-axe-48.png);
 }
 
 button.accordion-button.collapsed {
