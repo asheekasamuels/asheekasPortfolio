@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Nanum Pen Script;
 }
 
 
@@ -118,7 +119,7 @@ img[alt='Asheeka1'] {
   .picture {
     margin: 20px;
   }
-  
+
    @media only screen and (max-width: 1700px){
     .infoBlocks {
       width: 90%;
@@ -773,4 +774,5 @@ input {
       margin-bottom: 20px;
     }
   }
+  
   
