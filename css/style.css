@@ -5,8 +5,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Nanum Pen Script;
+    font-size: 20px; /* Adjust the size as needed */
 }
 
+/* Hide scrollbar */
 ::-webkit-scrollbar{
     display: none;
 }
@@ -474,22 +476,20 @@ main {
   
   .timeline>li>.timeline-badge {
     color: #F080B7;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    line-height: 30px; /* Adjust line-height */
     font-size: 1.1em;
     text-align: center;
     position: absolute;
     top: 16px;
     left: 50%;
-    margin-left: -25px;
+    margin-left: -15px; /* Adjust margin-left */
     background-color: black;
     z-index: 100;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-  }
+    border-radius: 50%; /* Make the circle shape */
+}
+
   
   .timeline>li.timeline-inverted>.timeline-panel {
     float: right;
@@ -711,6 +711,7 @@ input:hover, textarea:hover {
 input {
     height: 80px;
 }
+
 @media only screen and (max-width: 425px) {
   ::placeholder {
     font-size: 13px;
